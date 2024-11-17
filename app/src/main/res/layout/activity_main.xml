@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Loan Amount Input -->
+    <TextView
+        android:id="@+id/loanAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/loanAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Amount"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"/>
+
+    <!-- Interest Rate Input -->
+    <TextView
+        android:id="@+id/interestRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest Rate (%)"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Interest Rate"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"/>
+
+    <!-- Loan Term Input -->
+    <TextView
+        android:id="@+id/loanTermLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Term (Years)"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/loanTermEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Term (in years)"
+        android:inputType="number"
+        android:textSize="16sp"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Monthly Payment"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Payment: $0.00"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Graph (LineChart) -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/loanPaymentChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
